@@ -1,5 +1,7 @@
+package tdd.stringcalculator;
+
 public class Calculator {
- public int add (string numbers){ 
+ public static int add (String numbers){ 
   return 0;
  }
 }

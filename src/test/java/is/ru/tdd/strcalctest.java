@@ -1,5 +1,11 @@
+package tdd.stringcalculator;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
 public class strcalctest {
- public int add (string numbers){ 
-  return 0;
+ @Test
+ public void testEmptyString() {
+  assertEquals(0, Calculator.add(""));
  }
 }
