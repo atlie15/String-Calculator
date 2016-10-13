@@ -5,7 +5,8 @@ public class Calculator {
   if (numbers == "")
    return 0;
   else{
-   return sum(numbers.split(","));
+   String[] num = parse(numbers);
+   return sum(num);
   }
  }
 
@@ -15,5 +16,10 @@ public class Calculator {
    total += Integer.parseInt(num);
   }
   return total;
+ }
+
+ private static String[] parse(String input){
+  input = input.replace("\n", ",");
+  return input.split(",");
  }
 }
