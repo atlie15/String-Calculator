@@ -24,4 +24,12 @@ public class strcalctest {
  public void testNewLine() {
   assertEquals(6, Calculator.add("1\n2,3"));
  }
+/* @Test
+ public void testNegatives() {
+  assertEquals("Negatives not allowed: [-4, -5]", Calculator.add("2,-4,3,-5"));
+ }*/
+ @Test
+ public void testBigNum() {
+  assertEquals(13, Calculator.add("1\n2,10,1337"));
+ }
 }
